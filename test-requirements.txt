@@ -1,0 +1,5 @@
+pytest>=3.9
+pytest-cov>=6
+pytest-randomly>=3.16
+mypy>=1.14.1
+types-python-dateutil>=2.9.0.20241206

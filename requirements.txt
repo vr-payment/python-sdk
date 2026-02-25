@@ -1,0 +1,7 @@
+setuptools >= 75.6
+pydantic >= 2.10.4
+PyJWT >= 2.10.1
+python-dateutil >= 2.9.0.post0
+typing-extensions >= 4.12.2
+urllib3 >= 2.3, <3
+cryptography >= 2.0
