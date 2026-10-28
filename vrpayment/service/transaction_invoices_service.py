@@ -344,7 +344,7 @@ class TransactionInvoicesService:
             
         # process the header parameters
         if space is not None:
-            _header_params['Space'] = space
+            _header_params['space'] = space
         # process the form parameters
         # process the body parameter
 
@@ -617,7 +617,7 @@ class TransactionInvoicesService:
             
         # process the header parameters
         if space is not None:
-            _header_params['Space'] = space
+            _header_params['space'] = space
         # process the form parameters
         # process the body parameter
 
@@ -872,7 +872,7 @@ class TransactionInvoicesService:
         # process the query parameters
         # process the header parameters
         if space is not None:
-            _header_params['Space'] = space
+            _header_params['space'] = space
         # process the form parameters
         # process the body parameter
 
@@ -1127,7 +1127,7 @@ class TransactionInvoicesService:
         # process the query parameters
         # process the header parameters
         if space is not None:
-            _header_params['Space'] = space
+            _header_params['space'] = space
         # process the form parameters
         # process the body parameter
 
@@ -1453,7 +1453,7 @@ class TransactionInvoicesService:
             
         # process the header parameters
         if space is not None:
-            _header_params['Space'] = space
+            _header_params['space'] = space
         # process the form parameters
         # process the body parameter
 
@@ -1729,7 +1729,7 @@ class TransactionInvoicesService:
             
         # process the header parameters
         if space is not None:
-            _header_params['Space'] = space
+            _header_params['space'] = space
         # process the form parameters
         # process the body parameter
 
@@ -1767,6 +1767,7 @@ class TransactionInvoicesService:
         space: Annotated[StrictInt, Field(description="Specifies the ID of the space the operation should be executed in.")],
         success_url: Optional[StrictStr] = None,
         failure_url: Optional[StrictStr] = None,
+        ttl_in_minutes: Annotated[Optional[StrictInt], Field(description="Optional TTL in minutes relative to now. Allowed range is 1 to 561600 (13 months in minutes). If omitted, 30 minutes is used.")] = None,
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
@@ -1783,6 +1784,8 @@ class TransactionInvoicesService:
         :type success_url: str
         :param failure_url:
         :type failure_url: str
+        :param ttl_in_minutes: Optional TTL in minutes relative to now. Allowed range is 1 to 561600 (13 months in minutes). If omitted, 30 minutes is used.
+        :type ttl_in_minutes: int
         :param _request_timeout: timeout setting for this request. If one
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
@@ -1806,6 +1809,7 @@ class TransactionInvoicesService:
             space=space,
             success_url=success_url,
             failure_url=failure_url,
+            ttl_in_minutes=ttl_in_minutes,
             _content_type=_content_type,
             _headers=_headers,
             _host_index=_host_index
@@ -1842,6 +1846,7 @@ class TransactionInvoicesService:
         space: Annotated[StrictInt, Field(description="Specifies the ID of the space the operation should be executed in.")],
         success_url: Optional[StrictStr] = None,
         failure_url: Optional[StrictStr] = None,
+        ttl_in_minutes: Annotated[Optional[StrictInt], Field(description="Optional TTL in minutes relative to now. Allowed range is 1 to 561600 (13 months in minutes). If omitted, 30 minutes is used.")] = None,
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
@@ -1858,6 +1863,8 @@ class TransactionInvoicesService:
         :type success_url: str
         :param failure_url:
         :type failure_url: str
+        :param ttl_in_minutes: Optional TTL in minutes relative to now. Allowed range is 1 to 561600 (13 months in minutes). If omitted, 30 minutes is used.
+        :type ttl_in_minutes: int
         :param _request_timeout: timeout setting for this request. If one
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
@@ -1881,6 +1888,7 @@ class TransactionInvoicesService:
             space=space,
             success_url=success_url,
             failure_url=failure_url,
+            ttl_in_minutes=ttl_in_minutes,
             _content_type=_content_type,
             _headers=_headers,
             _host_index=_host_index
@@ -1918,6 +1926,7 @@ class TransactionInvoicesService:
         space: Annotated[StrictInt, Field(description="Specifies the ID of the space the operation should be executed in.")],
         success_url: Optional[StrictStr] = None,
         failure_url: Optional[StrictStr] = None,
+        ttl_in_minutes: Annotated[Optional[StrictInt], Field(description="Optional TTL in minutes relative to now. Allowed range is 1 to 561600 (13 months in minutes). If omitted, 30 minutes is used.")] = None,
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
@@ -1934,6 +1943,8 @@ class TransactionInvoicesService:
         :type success_url: str
         :param failure_url:
         :type failure_url: str
+        :param ttl_in_minutes: Optional TTL in minutes relative to now. Allowed range is 1 to 561600 (13 months in minutes). If omitted, 30 minutes is used.
+        :type ttl_in_minutes: int
         :param _request_timeout: timeout setting for this request. If one
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
@@ -1957,6 +1968,7 @@ class TransactionInvoicesService:
             space=space,
             success_url=success_url,
             failure_url=failure_url,
+            ttl_in_minutes=ttl_in_minutes,
             _content_type=_content_type,
             _headers=_headers,
             _host_index=_host_index
@@ -1988,6 +2000,7 @@ class TransactionInvoicesService:
         space,
         success_url,
         failure_url,
+        ttl_in_minutes,
         _content_type,
         _headers,
         _host_index,
@@ -2019,9 +2032,13 @@ class TransactionInvoicesService:
             
             _query_params.append(('failureUrl', failure_url))
             
+        if ttl_in_minutes is not None:
+            
+            _query_params.append(('ttlInMinutes', ttl_in_minutes))
+            
         # process the header parameters
         if space is not None:
-            _header_params['Space'] = space
+            _header_params['space'] = space
         # process the form parameters
         # process the body parameter
 
@@ -2297,7 +2314,7 @@ class TransactionInvoicesService:
             
         # process the header parameters
         if space is not None:
-            _header_params['Space'] = space
+            _header_params['space'] = space
         # process the form parameters
         # process the body parameter
 
@@ -2586,7 +2603,7 @@ class TransactionInvoicesService:
             
         # process the header parameters
         if space is not None:
-            _header_params['Space'] = space
+            _header_params['space'] = space
         # process the form parameters
         # process the body parameter
         if transaction_invoice_replacement is not None:

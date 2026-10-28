@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "vrpayment"
-version = "6.4.0"
+version = "7.0.0"
 description = "SDK that allows you to access VR Payment API"
 authors = ["Wallee AG"]
 license = "Apache-2.0"
