@@ -3020,7 +3020,7 @@ Additional Api models documentation: [*link*](https://gateway.vr-payment.de/en-u
 * <strong>PaymentTerminalTransactionSummary</strong>
 * <strong>PaymentTerminalTransactionSummaryReference</strong>
 * <strong>PaymentTerminalType</strong>
-* <strong>PaymentTerminalUpdate</strong>
+* <strong>PaymentTerminalUpdateRequest</strong>
 * <strong>Permission</strong>
 * <strong>PermissionListResponse</strong>
 * <strong>PermissionSearchResponse</strong>
@@ -3167,6 +3167,7 @@ Additional Api models documentation: [*link*](https://gateway.vr-payment.de/en-u
 * <strong>SubscriptionMetricUpdate</strong>
 * <strong>SubscriptionMetricUsageReport</strong>
 * <strong>SubscriptionMetricUsageReportCreate</strong>
+* <strong>SubscriptionPartialUpdateRequest</strong>
 * <strong>SubscriptionPending</strong>
 * <strong>SubscriptionPeriodBill</strong>
 * <strong>SubscriptionPeriodBillListResponse</strong>
@@ -3231,6 +3232,7 @@ Additional Api models documentation: [*link*](https://gateway.vr-payment.de/en-u
 * <strong>TokenizedCardDataCreate</strong>
 * <strong>TokenizedCardRequest</strong>
 * <strong>Transaction</strong>
+* <strong>TransactionAmounts</strong>
 * <strong>TransactionClientPlatformInformation</strong>
 * <strong>TransactionComment</strong>
 * <strong>TransactionCommentActive</strong>

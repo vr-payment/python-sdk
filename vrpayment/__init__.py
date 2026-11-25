@@ -25,7 +25,7 @@ limitations under the License.
 """
 
 
-__version__ = "7.0.0"
+__version__ = "8.0.0"
 
 # import apis into sdk package
 from vrpayment.service.accounts_service import AccountsService
@@ -480,7 +480,7 @@ from vrpayment.models.payment_terminal_transaction_sum import PaymentTerminalTra
 from vrpayment.models.payment_terminal_transaction_summary import PaymentTerminalTransactionSummary
 from vrpayment.models.payment_terminal_transaction_summary_reference import PaymentTerminalTransactionSummaryReference
 from vrpayment.models.payment_terminal_type import PaymentTerminalType
-from vrpayment.models.payment_terminal_update import PaymentTerminalUpdate
+from vrpayment.models.payment_terminal_update_request import PaymentTerminalUpdateRequest
 from vrpayment.models.permission import Permission
 from vrpayment.models.permission_list_response import PermissionListResponse
 from vrpayment.models.permission_search_response import PermissionSearchResponse
@@ -627,6 +627,7 @@ from vrpayment.models.subscription_metric_type import SubscriptionMetricType
 from vrpayment.models.subscription_metric_update import SubscriptionMetricUpdate
 from vrpayment.models.subscription_metric_usage_report import SubscriptionMetricUsageReport
 from vrpayment.models.subscription_metric_usage_report_create import SubscriptionMetricUsageReportCreate
+from vrpayment.models.subscription_partial_update_request import SubscriptionPartialUpdateRequest
 from vrpayment.models.subscription_pending import SubscriptionPending
 from vrpayment.models.subscription_period_bill import SubscriptionPeriodBill
 from vrpayment.models.subscription_period_bill_list_response import SubscriptionPeriodBillListResponse
@@ -691,6 +692,7 @@ from vrpayment.models.tokenized_card_data import TokenizedCardData
 from vrpayment.models.tokenized_card_data_create import TokenizedCardDataCreate
 from vrpayment.models.tokenized_card_request import TokenizedCardRequest
 from vrpayment.models.transaction import Transaction
+from vrpayment.models.transaction_amounts import TransactionAmounts
 from vrpayment.models.transaction_client_platform_information import TransactionClientPlatformInformation
 from vrpayment.models.transaction_comment import TransactionComment
 from vrpayment.models.transaction_comment_active import TransactionCommentActive
